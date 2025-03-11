@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+.next/
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Other
+uploads/

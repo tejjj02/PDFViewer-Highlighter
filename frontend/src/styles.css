@@ -1,0 +1,93 @@
+/* src/styles.css */
+.pdf-viewer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f5f5f5;
+}
+
+.pdf-controls {
+  display: flex;
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #dee2e6;
+  gap: 20px;
+  align-items: center;
+}
+
+.navigation-controls,
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.highlight-colors {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.color-button {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-button.selected {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 2px #000;
+}
+
+.color-button:hover {
+  transform: scale(1.1);
+}
+
+.pdf-container {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pdf-container .react-pdf__Document {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pdf-container .react-pdf__Page {
+  margin: 0 auto;
+}
+
+/* Update highlight item styling */
+.highlight-item {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.highlight-item:hover {
+  transform: translateX(5px);
+}
+
+/* Add styles for zoom controls */
+.zoom-controls button {
+  padding: 5px 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.zoom-controls span {
+  min-width: 60px;
+  text-align: center;
+}
